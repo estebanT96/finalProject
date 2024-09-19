@@ -17,6 +17,22 @@
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+.blue__text {
+  color: rgb(90, 79, 250);
+}
+
+header {
+  padding: 0 20px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 15px;
+}
 /* NAVIGATION BAR  */
 
 .nav__bar {
@@ -24,6 +40,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 32px 0;
+  margin-bottom: 56px;
 }
 
 .logo {
@@ -49,7 +66,7 @@
   font-size: 24px;
   font-weight: 900;
   width: 80%;
-  justify-content:center;
+  justify-content: center;
 }
 
 .links {
@@ -82,13 +99,28 @@
   font-weight: 600;
   color: rgb(97, 96, 96);
   font-size: 14px;
+  transition: all ease 300ms;
+  border-bottom: 2px solid transparent;
+}
+
+
+.generic__link:hover,
+.user__link:hover {
+  color: rgb(90, 79, 250);
+  border-bottom: 2px solid rgb(90, 79, 250);
 }
 
 .sign__up--wrapper {
   display: flex;
-  background-color: rgb(90, 79, 250);
+  background-color:rgb(90, 79, 250) ;
   padding: 8px 24px;
   border-radius: 50px;
+  transition: all ease 300ms;
+}
+
+.sign__up--wrapper:hover {
+  background-color:rgb(67, 57, 202) ;
+  cursor: pointer;
 }
 
 .signup__link {
@@ -96,4 +128,86 @@
   font-weight: 600;
   color: white;
   font-size: 14px;
+}
+
+/* HEADER DESCRIPTION */
+.header__description {
+  display: flex;
+  height: 500px;
+}
+
+.header__text--container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 24px;
+}
+
+.email__input--container {
+  position: relative;
+  width: 85%;
+}
+.email__input {
+  width: 80%;
+  padding: 16px;
+  border: 2px solid rgb(217, 224, 224);
+  border-radius: 50px;
+}
+
+.email__input--container input {
+  width: 100%;
+  padding-right: 50px;
+}
+
+.email__input--container button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color:rgb(90, 79, 250);
+  padding: 12px 20px;
+  border-radius: 50px;
+  transition: all ease 300ms;
+}
+
+.email__input--container button:hover {
+  background-color:rgb(67, 57, 202);
+  cursor: pointer;
+}
+
+.getstarted__button {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.customers__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.trusted__customers--text {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(160, 160, 160);
+  margin-bottom: 4px;
+}
+
+.trusted__customers {
+  width: 80%;
+  filter: opacity(60%);
+}
+
+.header__img--wrapper {
+  padding: 36px;
+  width: 65%;
+}
+
+.header__img {
+  width: 100%;
+  height: 100%;
 }
