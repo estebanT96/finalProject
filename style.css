@@ -31,6 +31,7 @@ h1 {
 
 header {
   padding: 0 20px;
+  position: relative;
 }
 
 p {
@@ -43,6 +44,14 @@ p {
   font-weight: 600;
 }
 /* NAVIGATION BAR  */
+
+.header__left--deco {
+  position: absolute;
+  right: 92vw; /* Adjusted to viewport width */
+  top: 35vh; /* Adjusted to viewport height */
+  transform: scale(0.9);
+  filter: opacity(20%);
+}
 
 .nav__bar {
   display: flex;
@@ -107,7 +116,7 @@ p {
   text-decoration: none;
   font-weight: 600;
   color: rgb(97, 96, 96);
-  font-size: 14px;
+  font-size: 0.8rem;
   transition: all ease 300ms;
   border-bottom: 2px solid transparent;
 }
@@ -135,26 +144,27 @@ p {
   text-decoration: none;
   font-weight: 600;
   color: white;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 /* HEADER DESCRIPTION */
 .header__description {
   display: flex;
   height: 500px;
+  width: 100%;
 }
 
 .header__text--container {
-  width: 35%;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0 24px;
+  padding: 24px;
 }
 
 .email__input--container {
   position: relative;
-  width: 85%;
+  width: 100%;
 }
 .email__input {
   width: 80%;
@@ -170,7 +180,7 @@ p {
 
 .email__input--container button {
   position: absolute;
-  right: 10px;
+  right: 6px;
   top: 50%;
   transform: translateY(-50%);
   border: none;
@@ -188,7 +198,7 @@ p {
 .getstarted__button {
   color: white;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 .customers__container {
@@ -220,9 +230,9 @@ p {
   height: 100%;
 }
 
-/* FEATURES  */
+/* FEATURES & SERVICES  */
 
-#features {
+.features__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,7 +247,6 @@ p {
 
 .services {
   width: 60%;
-
 }
 
 .services__list {
@@ -283,4 +292,60 @@ p {
   color: rgb(129, 129, 129);
   font-weight: 500;
   padding-right: 30px;
+}
+
+/* QUALITY WORK  */
+
+#quality__work .row {
+  padding: 0 44px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.quality__para {
+  color: rgb(129, 129, 129);
+}
+
+.quality__text--container {
+  width: 50%;
+  height: 300px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.quality__text--container button {
+  padding: 12px 20px;
+  border: none;
+  background-color: rgb(90, 79, 250);
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all ease 300ms;
+}
+
+.quality__text--container button:hover {
+  background-color: rgb(67, 57, 202);
+  cursor: pointer;
+}
+
+.quality__img--wrapper {
+  width: 60%;
+  border: 1px solid rgb(231, 230, 230);
+  overflow: hidden;
+}
+
+.quality__img--wrapper img {
+  width: 100%;
+  transform: scale(1.05);
+}
+
+.quality__img--wrapper .fa-arrow-up-right-dots {
+  font-size: 36px;
 }
