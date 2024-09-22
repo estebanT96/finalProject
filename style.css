@@ -246,7 +246,7 @@ p {
 }
 
 .services {
-  width: 60%;
+  width: 70%;
 }
 
 .services__list {
@@ -281,6 +281,10 @@ p {
   border-radius: 100%;
 }
 
+.service__description {
+  padding-right: 40px;
+}
+
 .service__description h4 {
   margin-bottom: 8px;
   color: rgb(49, 49, 49);
@@ -288,7 +292,7 @@ p {
 
 .service__description p {
   line-height: 1.5;
-  font-size: 12px;
+  font-size: 13px;
   color: rgb(129, 129, 129);
   font-weight: 500;
   padding-right: 30px;
@@ -300,16 +304,21 @@ p {
   padding: 0 8px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .quality__text--container {
-  width: 50%;
+  margin-right: 36px;
+  width: 40%;
   height: 300px;
-  padding: 0 56px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
+}
+
+.quality__text--container h1 {
+  padding-right: 24px;
 }
 
 .quality__text--container p {
