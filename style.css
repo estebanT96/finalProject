@@ -297,37 +297,33 @@ p {
 /* QUALITY WORK  */
 
 #quality__work .row {
-  padding: 0 44px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 0 8px;
   display: flex;
   align-items: center;
-}
-
-.quality__para {
-  color: rgb(129, 129, 129);
 }
 
 .quality__text--container {
   width: 50%;
   height: 300px;
-  padding: 0 24px;
+  padding: 0 56px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
 }
 
+.quality__text--container p {
+  color: rgb(129, 129, 129);
+}
+
 .quality__text--container button {
-  padding: 12px 20px;
   border: none;
   background-color: rgb(90, 79, 250);
+  padding: 12px 20px;
   border-radius: 50px;
-  color: white;
   font-weight: 600;
+  color: white;
   font-size: 0.8rem;
-  transition: all ease 300ms;
 }
 
 .quality__text--container button:hover {
@@ -336,16 +332,27 @@ p {
 }
 
 .quality__img--wrapper {
-  width: 60%;
-  border: 1px solid rgb(231, 230, 230);
-  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  background-color: white;
 }
 
-.quality__img--wrapper img {
+.quality__img--wrapper figure {
+  position: relative;
+}
+
+.quality__img {
   width: 100%;
-  transform: scale(1.05);
+  border: 1px solid rgb(248, 247, 247);
+  display: block;
 }
 
-.quality__img--wrapper .fa-arrow-up-right-dots {
+.fa-arrow-up-right-dots {
+  position: absolute;
   font-size: 36px;
+  right: 0; /* Stick to the right corner */
+  bottom: 0; /* Stick to the bottom corner */
+  z-index: -1;
+  transform: translate(40%, 25%); /* Slight adjustment to prevent clipping */
+  margin-right: 8px;
 }
