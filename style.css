@@ -894,10 +894,10 @@ p {
   margin: 0 8px;
 }
 
-.fa-arrow-left, .fa-arrow-right {
+.fa-arrow-left,
+.fa-arrow-right {
   font-size: 13px;
 }
-
 
 /* FAQS  */
 #faqs .row {
@@ -943,4 +943,56 @@ p {
 .question__container:hover {
   cursor: pointer;
   background-color: rgb(228, 229, 231);
+}
+
+/* GET STARTED  */
+
+#get__started .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get__started--container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+  background-color: rgb(90, 79, 250);
+  height: 180px;
+  border-radius: 5px;
+}
+
+#get__started h2 {
+  width: 40%;
+  color: white;
+}
+
+.buttons__container {
+  display: flex;
+  justify-content: space-between;
+  width: 26%;
+}
+
+.getstarted__btn {
+  border: none;
+  background-color: rgb(245 101 101);
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px 0.4px #a5adc5;
+  font-size: 0.7rem;
+  transition: all ease 300ms;
+}
+
+.contact__us {
+  border: 0.5px solid white;
+  background-color: transparent;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 0.7rem;
+  transition: all ease 300ms;
 }
