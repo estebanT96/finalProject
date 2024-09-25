@@ -167,12 +167,18 @@ p {
   position: relative;
   width: 100%;
 }
+
 .email__input {
   width: 80%;
   padding: 16px;
   border: 2px solid rgb(217, 224, 224);
   border-radius: 50px;
 }
+
+.email__input:active {
+  border: 2px solid rgb(12, 184, 184);
+}
+
 
 .email__input--container input {
   width: 100%;
