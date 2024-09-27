@@ -179,7 +179,6 @@ p {
   border: 2px solid rgb(12, 184, 184);
 }
 
-
 .email__input--container input {
   width: 100%;
   padding-right: 50px;
@@ -987,9 +986,14 @@ p {
   border-radius: 50px;
   font-weight: 700;
   color: rgb(255, 255, 255);
-  box-shadow: 1px 1px 1px 0.4px #a5adc5;
+  box-shadow: 0 10px 10px rgb(65, 53, 245);
   font-size: 0.7rem;
   transition: all ease 300ms;
+}
+
+.getstarted__btn:hover {
+  cursor: pointer;
+  background-color: rgb(212, 89, 89);
 }
 
 .contact__us {
@@ -999,6 +1003,134 @@ p {
   border-radius: 50px;
   font-weight: 700;
   color: rgb(255, 255, 255);
+  box-shadow: 0 10px 10px rgb(65, 53, 245);
   font-size: 0.7rem;
   transition: all ease 300ms;
+}
+
+.contact__us:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(65, 53, 245);
+}
+
+.buttons__container button:active {
+  transform: translateY(1px);
+}
+
+/* FOOTER */
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(90, 79, 250);
+}
+
+.footer__container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.footer__lists {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgb(104, 112, 219);
+}
+
+.footer__list {
+  list-style-type: none;
+}
+
+.footer__list h5 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer__list li {
+  margin-top: 8px;
+}
+
+.footer__list a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  transition: all ease 50ms;
+  border-bottom: 2px solid transparent;
+}
+
+.footer__list a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 1px;
+  box-shadow: 0 10px 10px rgb(65, 53, 245);
+}
+
+.footer__company--info {
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo--container {
+  display: flex;
+  align-items: center;
+}
+
+.letter__t--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  margin-right: 6px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.letter__t {
+  font-weight: 800;
+  color: rgb(90, 79, 250);
+}
+
+.treact__inc {
+  font-weight: 700;
+  color: white;
+}
+
+.copyright {
+  font-size: 12px;
+  color: white;
+}
+
+.social__networks {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__network a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 100px;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-youtube {
+  font-size: 12px;
+  padding: 8px;
 }
