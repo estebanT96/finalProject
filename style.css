@@ -22,6 +22,10 @@ h1 {
   color: #313131;
 }
 
+h2 {
+  font-size: 44px;
+}
+
 .blue {
   color: rgb(90, 79, 250);
 }
@@ -228,7 +232,7 @@ p {
 
 .header__img--wrapper {
   padding: 36px;
-  width: 65%;
+  width: 600px;
 }
 
 .header__img {
@@ -586,13 +590,13 @@ p {
 
 .pricing__plans {
   margin: 36px auto;
-  height: 550px;
   width: 100%;
   display: flex;
 }
 
 .plan {
   width: calc(100% / 3);
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -938,7 +942,7 @@ p {
 
 .question__list {
   margin-top: 36px;
-  width: 60%;
+  width: 700px;
 }
 
 .question__container {
@@ -1006,9 +1010,11 @@ p {
 }
 
 #get__started h2 {
-  width: 40%;
+  width: 50%;
   color: white;
   z-index: 1;
+  font-size: 28px;
+  padding-right: 24px;
 }
 
 .buttons__container {
@@ -1200,4 +1206,112 @@ footer {
   filter: opacity(70%);
   font-size: 200px;
   transform: translate(-30%, -25%);
+}
+
+@media (max-width: 1023px) {
+  .links {
+    display: none;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .header__text--container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+
+  .header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+  }
+
+  .customers__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__img--wrapper {
+    height: 50%;
+    padding: 24px;
+  }
+
+  .header__img {
+    height: 100%;
+  }
+
+  .services {
+    width: 60%;
+  }
+  .service {
+    width: calc(100% / 2);
+  }
+
+  .principles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .affordable,
+  .professionalism {
+    margin-bottom: 24px;
+  }
+
+  .principles p {
+    width: 100%;
+  }
+
+  .values__text--container button {
+    margin-top: 0;
+  }
+
+  .pricing__plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    margin-bottom: 24px;
+    height: 510px;
+  }
+
+  .buynow__btn--wrapper {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .personal__buynow--btn,
+  .business__buynow--btn,
+  .enterprise__buynow--btn {
+    height: 40px;
+    width: 190px;
+  }
+
+  .question__list {
+  width: 70%;
+  }
+
+  .get__started--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 230px;
+  }
+
+  #get__started h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    width: 440px;
+    padding-right: 0;
+  }
 }

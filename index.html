@@ -21,6 +21,8 @@
               class="header__left--deco"
             />
           </figure>
+
+
           <nav class="nav__bar">
             <div class="logo">
               <figure class="logo__img--wrapper">
@@ -42,13 +44,37 @@
                 </div>
               </ul>
             </div>
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#landing" class="menu__link" onclick="closeMenu()">Home</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#featured__instruments" class="menu__link" onclick="closeMenu()">Instruments</a
+                  >
+                </li>
+                <li class="menu__list">
+                  <a href="#contact" class="menu__link" style="cursor: no-drop" onclick="closeMenu()">Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
           </nav>
+
+
+        
           <div class="header__description">
             <div class="header__text--container">
-              <h1>
+              <h2>
                 Beautiful React Templates
                 <span class="blue">for you.</span>
-              </h1>
+              </h2>
               <p>
                 Our templates are easy to setup, understand and customize. Fully
                 modular coponentes with a variety of pages and components.
@@ -541,7 +567,7 @@
                 <i class="fa-solid fa-circle circle__1"></i>
                 <i class="fa-solid fa-circle circle__2"></i>
               </div>
-              <h2>Developers all over the world are happily using Treact</h2>
+              <h2>Developers all over the world are happily using Treact.</h2>
               <div class="buttons__container">
                 <button class="getstarted__btn">Get Started</button>
                 <button class="contact__us">Contact Us</button>
