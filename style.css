@@ -472,6 +472,7 @@ p {
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .values__text--container {
@@ -1224,6 +1225,10 @@ footer {
     height: 300px;
   }
 
+  .header__text--container p {
+    text-align: center;
+  }
+
   .header__description {
     display: flex;
     flex-direction: column;
@@ -1280,6 +1285,7 @@ footer {
   .plan {
     margin-bottom: 24px;
     height: 510px;
+    width: 340px;
   }
 
   .buynow__btn--wrapper {
@@ -1297,7 +1303,7 @@ footer {
   }
 
   .question__list {
-  width: 70%;
+    width: 70%;
   }
 
   .get__started--container {
@@ -1314,4 +1320,353 @@ footer {
     width: 440px;
     padding-right: 0;
   }
+}
+
+@media (max-width: 767px) {
+  .header__text--container {
+    display: flex;
+    align-items: center;
+  }
+
+  .features__para {
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .email__input--container {
+    position: relative;
+    width: 80%;
+  }
+
+  .customers__container figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  .service {
+    width: calc(100%);
+  }
+
+  .service__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .service__description {
+    width: 200px;
+  }
+
+  .service__description p {
+    padding-right: 0;
+    line-height: 2;
+  }
+
+  #quality__work .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .quality__img--wrapper {
+    width: 400px;
+  }
+
+  .quality__img--wrapper figure {
+    width: 100%;
+  }
+
+  .quality__text--container {
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    width: 350px;
+  }
+
+  .quality__text--container h1 {
+    font-size: 26px;
+    padding-right: 0;
+    width: 300px;
+    text-align: center;
+  }
+  .quality__text--container p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #steps .row {
+    flex-direction: column;
+  }
+
+  .steps__img--wrapper {
+    width: 75%;
+  }
+
+  .steps__text--container {
+    align-items: center;
+    margin-top: 64px;
+    margin-left: 0;
+  }
+
+  .steps__text--container h1 {
+    font-size: 26px;
+    width: 350px;
+    text-align: center;
+  }
+
+  .steps__text--container ul {
+    align-items: center;
+    width: 100%;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step__number {
+    text-align: center;
+    width: 100%;
+  }
+
+  .step__text {
+    align-items: center;
+  }
+
+  .step__text p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    width: 240px;
+  }
+
+  #values .row {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+
+  .values__text--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .values__text--container h1 {
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .values__para {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .principles {
+    align-items: center;
+  }
+
+  .affordable__title,
+  .professionalism__title {
+    justify-content: center;
+  }
+
+  .affordable p,
+  .professionalism p {
+    text-align: center;
+    width: 300px;
+  }
+
+  .affordable,
+  .professionalism {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing__description h1 {
+    font-size: 36px;
+    text-align: center;
+    width: 450px;
+  }
+
+  .pricing__description p {
+    font-size: 12px;
+  }
+
+
+
+}
+
+@media (max-width: 754px) {
+  #features h1 {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 639px) {
+  .email__input--container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email__input--container button {
+    margin-top: 8px;
+    position: static;
+    transform: none;
+    height: 44px;
+    width: 380px;
+  }
+
+  .service__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service__description {
+    padding: 0;
+  }
+
+  .service__description h4,
+  .service__description p {
+    text-align: center;
+  }
+
+  .service__img--wrapper {
+    margin-right: 0;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .quality__text--container {
+    margin-top: 24px;
+  }
+
+  #testimonials .row {
+    flex-direction: column;
+  }
+
+  .testimonials__img--wrapper {
+    width: 90%;
+  }
+
+  .testimonials__text--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 0;
+  }
+
+  .testimonials__text--container p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stars {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  .testimonials__text--container p {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .review__person--container {
+    flex-direction: column;
+  }
+
+  .review__person {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name__job {
+    margin-left: 0;
+  }
+
+  .name__job h4,
+  .name__job span {
+    text-align: center;
+  }
+
+  .arrows {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .arrows__wrapper {
+    margin-top: 12px;
+  }
+
+  .middle__border {
+    border-left: 1px solid rgb(216, 215, 215);
+    height: 15px;
+    margin: 0 8px;
+  }
+
+  #get__started h2 {
+    font-size: 16px;
+    width: 100%;
+    margin: 0 12px;
+  }
+
+.get__started--container {
+  width: 80%;
+}
+
+  .buttons__container {
+    flex-direction: column;
+    height: 50%;
+    justify-content: start;
+  }
+
+  .getstarted__btn {
+    margin-right: 0;
+    width: 110px;
+    height: 45px;
+  }
+
+  .contact__us {
+    margin: 0;
+    margin-top: 12px;
+    height: 45px;
+  }
+
+.footer__lists {
+  max-width: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.footer__list {
+  margin: 8px;
+  text-align: center;
+}
+
+.footer__company--info {
+  padding-top: 12px;
+  flex-direction: column;
+  height: 120px;
+}
+
 }
