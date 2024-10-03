@@ -1669,4 +1669,8 @@ footer {
   height: 120px;
 }
 
+section {
+  margin: 0 auto;
+}
+
 }
