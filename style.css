@@ -19,6 +19,10 @@
   margin: 0 auto;
 }
 
+.blue__text {
+  color: rgb(100 21 255);
+}
+
 /* Nav Bar */
 .nav__bar--container {
   display: flex;
@@ -87,7 +91,8 @@
   color: rgb(100 21 255);
 }
 
-.generic__links a:hover .underline, .login__link:hover .underline {
+.generic__links a:hover .underline,
+.login__link:hover .underline {
   background-color: rgb(100 21 255);
   width: 100%;
 }
@@ -99,7 +104,7 @@
 .underline {
   position: absolute;
   height: 2px;
-  width: 0;
+  width: 10%;
   background-color: transparent;
   transform: translateY(10px);
   transition: all ease 200ms;
@@ -123,6 +128,85 @@
 }
 
 /* Header */
+
+#header .row {
+  display: flex;
+}
+
+.header__info--container {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.header__info--container h1 {
+  font-size: 3rem;
+}
+
+.header__info--container p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.header__input--container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 60px;
+  width: 80%;
+  border-radius: 50px;
+  border: 2px solid rgb(228, 228, 228);
+  transition: all ease 200ms;
+}
+
+.header__input--container:hover {
+  cursor: text;
+  border: 2px solid rgb(197, 196, 196);
+}
+
+.header__input {
+  border: none;
+}
+
+.header__input--button {
+  position: absolute;
+  right: 5px;
+  color: white;
+  background-color: rgb(100 21 255);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all ease 300ms;
+}
+
+.header__input--button:hover {
+  cursor: pointer;
+  background-color: rgb(56, 6, 155);
+}
+
+.trusted__customers span {
+  color: rgb(163, 163, 163);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.trusted__customers img {
+  width: 80%;
+  filter: opacity(60%);
+}
+
+.header__img--wrapper {
+  width: 60%;
+}
+
+.header__img--wrapper img {
+  width: 100%;
+}
+
 /* Quality Work */
 /* Steps */
 /* Values */
