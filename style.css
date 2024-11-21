@@ -6,3 +6,128 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+/* Global Classes */
+
+.container {
+  padding: 50px 0;
+}
+
+.row {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Nav Bar */
+.nav__bar--container {
+  display: flex;
+  margin: 30px 0;
+}
+
+.nav__bar--logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.nav--T__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  background-color: rgb(100 21 255);
+  border-radius: 3px;
+  margin-right: 7px;
+}
+
+.nav--T__wrapper span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav--T__text span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(36, 62, 99);
+}
+
+.nav__bar--links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.generic__links ul,
+.user__links ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__bar--links a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #243e63;
+}
+
+.generic__links {
+  width: 60%;
+}
+
+.generic__links a:hover,
+.login__link:hover {
+  color: rgb(100 21 255);
+}
+
+.generic__links a:hover .underline, .login__link:hover .underline {
+  background-color: rgb(100 21 255);
+  width: 100%;
+}
+
+.user__links {
+  width: 25%;
+}
+
+.underline {
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: transparent;
+  transform: translateY(10px);
+  transition: all ease 200ms;
+}
+
+.signup__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  background-color: rgb(100 21 255);
+  border-radius: 50px;
+}
+
+.signup__link li {
+  color: white;
+}
+
+.signup__link:hover {
+  filter: brightness(90%);
+}
+
+/* Header */
+/* Quality Work */
+/* Steps */
+/* Values */
+/* Pricing */
+/* Testimonials */
+/* FAQS */
+/* Get Started */
+/* Footer */
