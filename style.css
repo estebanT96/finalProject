@@ -528,6 +528,11 @@ h2 {
 
 /* Pricing */
 
+#pricing .row {
+  max-width: 1300px;
+  width: 100%;
+}
+
 .pricing__description {
   display: flex;
   flex-direction: column;
@@ -549,19 +554,199 @@ h2 {
 
 .plans__container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 36px;
 }
 
 .plan {
-  width: calc(100% / 3);
-  margin: 0 15px;
+  width: calc(80% / 3);
+  height: 600px;
+  margin: 0 25px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px rgb(112, 112, 112);
 }
 
-.personal {
+.personal,
+.enterprise {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.business {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+}
+
+.personal__top--border {
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.enterprise__top--border {
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+.business__top--border {
+  background-color: rgb(76, 81, 191);
+}
+
+.price__personal,
+.price__enterprise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.price__business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  color: white;
+}
+
+.plan__title {
+  font-size: 1.5rem;
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.monthly {
+  font-weight: 700;
+  color: gray;
+  margin: 10px 0;
+}
+
+.business__monthly {
+  font-weight: 700;
+  color: white;
+  margin: 10px 0;
+}
+
+.plan__description {
+  border-top: 1px solid rgb(189, 188, 188);
+  border-bottom: 1px solid rgb(189, 188, 188);
+  width: 100%;
+  padding: 20px 0;
+}
+
+.business__description {
+  border-top: 1px solid rgb(189, 188, 188);
+  border-bottom: 1px solid rgb(189, 188, 188);
+  width: 100%;
+  padding: 20px 0;
+  color: white;
+}
+
+.business__description > li {
+  color: white;
+}
+
+.plan__description--list,
+.business__description--list {
+  text-align: center;
+}
+
+.plan__description--list > .plan__description--title,
+.business__description--list > .business__description--title {
+  list-style-type: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.plan__description--list > li {
+  font-weight: 600;
+  color: rgb(134, 134, 134);
+  margin-bottom: 20px;
+}
+
+.business__description--list > li {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.plan__button--container {
+  margin: 20px 0;
+}
+
+.personal__button {
+  color: white;
+  border: none;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  padding: 16px 0;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 160px;
+  transition: all ease 300ms;
+}
+
+.business__button {
+  color: rgb(76, 81, 191);
+  border: none;
+  background-color: white;
+  padding: 16px 0;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 160px;
+  transition: all ease 300ms;
+}
+
+.enterprise__button {
+  color: white;
+  border: none;
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+  padding: 16px 0;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 160px;
+  transition: all ease 300ms;
+}
 /* Testimonials */
 /* FAQS */
 /* Get Started */
