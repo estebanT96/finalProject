@@ -720,6 +720,14 @@ h2 {
   transition: all ease 300ms;
 }
 
+.personal__button:hover,
+.business__button:hover,
+.enterprise__button:hover {
+  transform: translate(2px, -2px);
+  box-shadow: 0.5px 1px 1px 0.5px rgb(184, 183, 183);
+  cursor: pointer;
+}
+
 .business__button {
   color: rgb(76, 81, 191);
   border: none;
@@ -747,7 +755,51 @@ h2 {
   width: 160px;
   transition: all ease 300ms;
 }
+
 /* Testimonials */
+.testimonials__container {
+  display: flex;
+}
+
+.testimonials__img--wrapper {
+  width: 50%;
+}
+
+.testimonials__img > img {
+  width: 100%;
+}
+
+.testimonials__description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 50px;
+}
+
+.testimonials__description > span {
+  font-weight: 700;
+}
+
+.testimonials__description > .stars {
+  width: 18%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial__user {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__img--wrapper {
+  height: 100%;
+}
+
+.testimonial__img--wrapper > img {
+  height: 100%;
+}
+
 /* FAQS */
 /* Get Started */
 /* Footer */
