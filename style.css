@@ -338,6 +338,12 @@ body {
   background-color: rgb(100, 21, 255);
   color: white;
   font-weight: 600;
+  transition: all ease 300ms;
+}
+
+.qwork__btn:hover {
+  background-color: rgb(73, 17, 186);
+  cursor: pointer;
 }
 
 .qwork__img--wrapper {
