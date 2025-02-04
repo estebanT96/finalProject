@@ -933,5 +933,148 @@ h2 {
 
 /* Get Started */
 
+#get__started .row {
+  width: 100%;
+  height: 270px;
+  background-color: rgb(100 21 255);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getstarted__container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.getstarted__description {
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  z-index: 1;
+  width: 55%;
+}
+
+.getstarted__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  padding: 0 20px;
+}
+
+.getstarted__buttons > button {
+  height: 60px;
+  width: 160px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.getstarted__btn {
+  background-color: rgb(245 101 101);
+  border: none;
+  box-shadow: 0px 0.5px 0.5px 0.5px rgb(74, 8, 207);
+  transition: all ease 300ms;
+}
+
+.getstarted__btn:hover {
+  background-color: rgb(199, 75, 75);
+  cursor: pointer;
+}
+
+.contactus_btn {
+  background-color: transparent;
+  border: 1px solid white;
+  transition: all ease 300ms;
+}
+
+.contactus_btn:hover {
+  background-color: white;
+  color: rgb(100 21 255);
+  cursor: pointer;
+}
+
+.circle_1 {
+  position: absolute;
+  font-size: 300px;
+  top: 100px;
+  left: -50px;
+}
+
+.circle_2 {
+  position: absolute;
+  font-size: 300px;
+  right: -50px;
+  top: -220px;
+}
 
 /* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(100 21 255);
+}
+.footer__container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer--links__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--links__container > ul {
+  width: 20%;
+}
+
+.footer--links__container > ul > .ft__title {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer--links__container li {
+  list-style: none;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.footer--links__container a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.footer__underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.footer--links__container li:hover .footer__underline {
+  width: 100%;
+  background-color: white;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+}
+
