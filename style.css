@@ -366,3 +366,80 @@ body {
   z-index: -1;
   filter: opacity(30%);
 }
+
+/* STEPS */
+.steps__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laptop__wrapper > figure {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 90%;
+  position: relative;
+}
+
+.laptop__wrapper > figure > .laptop__img {
+  width: 100%;
+}
+
+.laptop__grid {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform:translate(-50%, 50%) scale(0.3);
+  filter: opacity(30%);
+  z-index: -1;
+}
+
+.steps__list {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.step__number {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-right: 20px;
+  color: rgb(202, 202, 202);
+}
+
+.step__title {
+  font-size: 1.3rem;
+  color: #243e63;
+  margin-bottom: 8px;
+}
+
+.step__para {
+  width: 80%;
+  line-height: 1.5;
+  color: rgb(133, 133, 133);
+  font-weight: 600;
+}
+
+/* VALUES */
+.values__container {
+  display: flex;
+}
+
+.values__description {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.values__para {
+  line-height: 1.5;
+  width: 85%;
+  font-weight: 600;
+  color: rgb(133, 133, 133);
+}
