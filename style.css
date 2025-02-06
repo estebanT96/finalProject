@@ -17,6 +17,7 @@
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .blue__text {
@@ -34,14 +35,9 @@ h3 {
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
-.background_1 {
-  position: absolute;
-  left: -850px;
-  top: 400px;
-  filter: opacity(40%);
-}
 /* Nav Bar */
 #nav_bar > .row {
   padding: 32px 0;
@@ -390,7 +386,7 @@ body {
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform:translate(-50%, 50%) scale(0.3);
+  transform: translate(-50%, 50%) scale(0.3);
   filter: opacity(30%);
   z-index: -1;
 }
@@ -429,6 +425,9 @@ body {
 /* VALUES */
 .values__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
 }
 
 .values__description {
@@ -442,4 +441,185 @@ body {
   width: 85%;
   font-weight: 600;
   color: rgb(133, 133, 133);
+}
+
+.principles {
+  margin-top: 24px;
+  display: flex;
+}
+
+.principle {
+  width: 50%;
+}
+
+.picon__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.dollar__sign--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(102, 221, 75);
+  border-radius: 50px;
+  margin-right: 12px;
+}
+
+.suitcase__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(242, 126, 55);
+  border-radius: 50px;
+  margin-right: 12px;
+}
+
+.picon__title > h4 {
+  font-size: 1.3rem;
+  color: #243e63;
+}
+
+.principle > p {
+  line-height: 1.5;
+  width: 85%;
+  color: gray;
+  font-weight: 500;
+}
+
+.values__btn {
+  margin-top: 30px;
+  width: 20%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(100, 21, 255);
+  color: white;
+  font-weight: 600;
+}
+
+.values__img--wrapper {
+  width: 45%;
+}
+
+.values__img--wrapper > img {
+  width: 100%;
+}
+
+/* PRICING */
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-between;
+  width: 85%;
+  height: 550px;
+}
+
+.plan {
+  width: calc(93% / 3);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+.plan__top--border {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  width: 100%;
+  height: 8px;
+}
+
+.price {
+  text-align: center;
+}
+
+.plan__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65%;
+}
+
+.plan__info--title {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.plan__description {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  justify-content: space-between;
+}
+
+.plan__description > li {
+  font-weight: 500;
+  color: gray;
+}
+
+.plan__btn--wrapper {
+  height: 15%;
+  border-top: 1px solid gray;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan__btn--wrapper > button {
+  padding: 12px 46px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  transition: all ease 200ms;
+}
+
+.plan__btn--wrapper > button:hover {
+  transform: translate(1px, -1px);
+  box-shadow: 0px 1px 10px -1px rgb(37, 37, 37);
+  cursor: pointer;
 }
