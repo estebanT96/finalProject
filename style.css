@@ -701,7 +701,7 @@ body {
 
 .testimonials__container {
   display: flex;
-  height: 500px;
+  height: 600px;
   align-items: center;
   justify-content: center;
 }
@@ -746,9 +746,18 @@ body {
 .review__title {
   font-size: 1.3rem;
   font-weight: 700;
+  margin-top: 20px;
+}
+
+.review__comment {
+  margin-top: 20px;
+  color: gray;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .review__user {
+  margin-top: 36px;
   display: flex;
   align-items: center;
 }
@@ -783,10 +792,11 @@ body {
 
 .arrows {
   display: flex;
-  width: 17%;
+  width: 25%;
   justify-content: space-between;
   height: 43px;
   align-items: center;
+  padding-right: 36px;
 }
 
 .arrow__wrapper {
@@ -809,4 +819,219 @@ body {
   width: 1px;
   height: 70%;
   background-color: rgb(202, 201, 201);
+}
+
+/* FAQS */
+.faqs__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faqs__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqs__description > p {
+  text-align: center;
+  width: 60%;
+  font-weight: 600;
+  color: gray;
+  line-height: 1.5;
+}
+
+.faqs__questions {
+  width: 100%;
+}
+
+.faqs__questions > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.question__wrapper {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 60px;
+  background-color: rgb(237 242 247);
+  padding: 0 26px;
+  border-radius: 5px;
+  transition: all ease 200ms;
+  margin-bottom: 20px;
+}
+
+.question__wrapper:hover {
+  background-color: rgb(230, 235, 240);
+  cursor: pointer;
+}
+
+.question {
+  width: 80%;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.question__wrapper > .fa-chevron-down {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+
+/* BANNER  */
+.banner__wrapper {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  height: 250px;
+  background-color: rgb(100 21 255);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle__1 {
+  position: absolute;
+  color: rgb(74, 14, 194);
+  transform: scale(20);
+  bottom: 0;
+  left: 5px;
+}
+
+.circle__2 {
+  position: absolute;
+  color: rgb(74, 14, 194);
+  transform: scale(12);
+  right: 12px;
+  bottom: 280px;
+}
+
+.banner__description {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  justify-content: start;
+}
+
+.banner__description > p {
+  width: 80%;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.banner__buttons {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 80px;
+}
+
+.get__started--btn {
+  padding: 22px 34px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(245 101 101);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: rgb(51, 7, 139) 0px 2px 4px;
+  transition: all ease 300ms;
+}
+
+.contact__us--btn {
+  padding: 22px 34px;
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all ease 300ms;
+}
+
+.get__started--btn:hover {
+  background-color: rgb(204, 79, 79);
+  cursor: pointer;
+}
+
+.contact__us--btn:hover {
+  background-color: white;
+  cursor: pointer;
+  color: rgb(100 21 255);
+}
+
+/* FOOTER  */
+
+#footer {
+  height: 40vh;
+  width: 100vw;
+  background-color: rgb(100 21 255);
+  padding: 50px 200px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(172, 172, 172, 0.274);
+}
+
+.footer__list--title {
+  color: white;
+}
+
+.footer__list {
+  list-style-type: none;
+}
+
+.main__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.main__links > li {
+  list-style-type: none;
+  color: white;
+  position: relative;
+  transition: color ease 200ms;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.footer__link--underline {
+  display: block;
+  height: 2px;
+  width: 0; /* Start with no width */
+  background-color: transparent;
+  margin-top: 3px;
+  transition: all ease 300ms;
+}
+
+.main__links > li:hover .footer__link--underline {
+  background-color: white;
+  width: 100%;
 }
