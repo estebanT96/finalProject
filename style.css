@@ -11,6 +11,7 @@
 
 .container {
   padding: 70px 0;
+  overflow: hidden;
 }
 
 .row {
@@ -34,8 +35,7 @@ h3 {
 }
 
 body {
-  position: relative;
-  overflow-x: hidden;
+
 }
 
 /* Nav Bar */
