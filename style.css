@@ -40,7 +40,7 @@ body {
 }
 
 /* Nav Bar */
-#nav_bar > .row {
+#nav__bar > .row {
   padding: 32px 0;
   display: flex;
   justify-content: space-between;
@@ -79,6 +79,10 @@ body {
 .treact:hover {
   color: rgb(100, 21, 255);
   cursor: pointer;
+}
+
+.burger__menu {
+  display: none;
 }
 
 .nav__bar--links {
@@ -505,7 +509,7 @@ body {
   transition: all ease 300ms;
 }
 
-.values__btn:hover { 
+.values__btn:hover {
   background-color: rgb(73, 17, 186);
   cursor: pointer;
 }
@@ -1118,4 +1122,22 @@ body {
 .social__wrapper > i {
   font-size: 0.7rem;
   transform: translateY(1px);
+}
+
+@media (max-width: 1024px) {
+  #nav__bar > .row > .nav__bar--links {
+    display: none;
+  }
+
+  .burger__menu {
+    display: block;
+    margin-right: 24px;
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 770px) {
+}
+
+@media (max-width: 575px) {
 }
