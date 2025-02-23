@@ -803,7 +803,7 @@ body {
 
 .arrows {
   display: flex;
-  width: 25%;
+  width: 150px;
   justify-content: space-between;
   height: 43px;
   align-items: center;
@@ -1295,6 +1295,75 @@ body {
   .testimonials__container {
     height: auto;
   }
+
+  .testimonials__description {
+    padding-left: 0;
+  }
+
+  .testimonials__description > h2 {
+    font-size: 2.5rem;
+  }
+
+  .testimonials__description > p {
+    width: 90%;
+  }
+
+  .review__comment {
+    width: 95%;
+  }
+
+  .arrows {
+    width: 170px;
+  }
+
+  .faqs__container {
+    width: 100%;
+  }
+
+  .faqs__description > h2 {
+    font-size: 2.5rem;
+  }
+
+  .banner__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner__description {
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .banner__description > p {
+    text-align: center;
+    width: 70%;
+  }
+
+  .banner__buttons {
+    padding-right: 0;
+    width: 350px;
+    z-index: 1;
+  }
+
+  #footer {
+    padding: 50px 50px;
+  }
+
+  .main__links > li {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.social__links {
+  width: 110px;
+}
 }
 @media (max-width: 770px) {
 }
